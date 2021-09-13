@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210803 14:55:26.455" rpa="false">
+<suite id="s1" name="Project rbt" source="D:\Workspace\Project_rbt">
+<suite id="s1-s1" name="Test Suite" source="D:\Workspace\Project_rbt\Test_Suite">
+<suite id="s1-s1-s1" name="VCA" source="D:\Workspace\Project_rbt\Test_Suite\VCA">
+<suite id="s1-s1-s1-s1" name="TC VCA 001" source="D:\Workspace\Project_rbt\Test_Suite\VCA\TC_VCA_001.robot">
+<test id="s1-s1-s1-s1-t1" name="Test label name">
+<kw name="Login" library="Internal_user">
+<arguments>
+<arg>https://qa-idp.tnrtp.org/</arg>
+<arg>firefox</arg>
+<arg>EOED_ANNUR_QA_DDS</arg>
+<arg>Amtex123</arg>
+</arguments>
+<kw name="Open Browser and maximize" library="Internal_user">
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210803 14:55:27.055" level="INFO">Opening browser 'firefox' to base url 'https://qa-idp.tnrtp.org/'.</msg>
+<msg timestamp="20210803 14:55:27.058" level="INFO">Firefox driver log is always forced to to: D:\Workspace\Project_rbt\geckodriver-15.log</msg>
+<status status="PASS" starttime="20210803 14:55:27.054" endtime="20210803 14:55:40.658"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210803 14:55:40.658" endtime="20210803 14:55:40.661"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:55:27.054" endtime="20210803 14:55:40.661"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210803 14:55:45.677" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:40.662" endtime="20210803 14:55:45.678"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${Username_value}</arg>
+</arguments>
+<msg timestamp="20210803 14:55:45.682" level="INFO">Typing text 'EOED_ANNUR_QA_DDS' into text field 'css:input#userName'.</msg>
+<status status="PASS" starttime="20210803 14:55:45.680" endtime="20210803 14:55:45.803"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210803 14:55:48.807" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:45.804" endtime="20210803 14:55:48.807"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${Password_value}</arg>
+</arguments>
+<msg timestamp="20210803 14:55:48.809" level="INFO">Typing text 'Amtex123' into text field 'css:input#password'.</msg>
+<status status="PASS" starttime="20210803 14:55:48.808" endtime="20210803 14:55:48.868"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210803 14:55:50.874" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:48.869" endtime="20210803 14:55:50.875"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210803 14:55:50.878" level="INFO">Clicking element 'xpath://button[contains(@class,'btn-primary') and text()='Login']'.</msg>
+<status status="PASS" starttime="20210803 14:55:50.876" endtime="20210803 14:55:51.146"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:55:27.054" endtime="20210803 14:55:51.147"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210803 14:55:56.162" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:51.147" endtime="20210803 14:55:56.163"></status>
+</kw>
+<kw name="Select Module" library="Internal_user">
+<arguments>
+<arg>DDS</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://div[@class='home-card-wrapper']//h5[text()='${Module}']</arg>
+</arguments>
+<msg timestamp="20210803 14:55:56.165" level="INFO">Clicking element 'xpath://div[@class='home-card-wrapper']//h5[text()='DDS']'.</msg>
+<status status="PASS" starttime="20210803 14:55:56.164" endtime="20210803 14:55:56.413"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:55:56.163" endtime="20210803 14:55:56.414"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210803 14:55:59.431" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:56.415" endtime="20210803 14:55:59.431"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='Value Chain Analysis']</arg>
+</arguments>
+<msg timestamp="20210803 14:55:59.432" level="INFO">Clicking element 'xpath://span[text()='Value Chain Analysis']'.</msg>
+<status status="PASS" starttime="20210803 14:55:59.432" endtime="20210803 14:55:59.829"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210803 14:56:02.830" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210803 14:55:59.830" endtime="20210803 14:56:02.831"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://span[text()='VCA Reports']</arg>
+</arguments>
+<msg timestamp="20210803 14:56:02.834" level="INFO">Clicking element 'xpath://span[text()='VCA Reports']'.</msg>
+<status status="PASS" starttime="20210803 14:56:02.831" endtime="20210803 14:56:03.098"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210803 14:56:08.108" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210803 14:56:03.099" endtime="20210803 14:56:08.109"></status>
+</kw>
+<kw name="Compare List values with space" library="Internal_user">
+<arguments>
+<arg>xpath://tr[@role='row']</arg>
+<arg>${VCA_Report_table}</arg>
+</arguments>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${list}</arg>
+</arguments>
+<assign>
+<var>@{Actual_Element}</var>
+</assign>
+<msg timestamp="20210803 14:56:08.126" level="INFO">@{Actual_Element} = [ &lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session="4f6e64e1-563b-48c5-889c-2fb46d5c838d", element="f4d505a9-3a00-45f4-9f5a-625837eb5c04")&gt; ]</msg>
+<status status="PASS" starttime="20210803 14:56:08.113" endtime="20210803 14:56:08.127"></status>
+</kw>
+<kw name="${Item} IN [ ${Actual_Element} ]" type="for">
+<kw name="${Item} = [&lt;selenium.webdriver.firefox.webelement.FirefoxWebElement (session=&quot;4f6e64e1-563b-48c5-889c-2fb46d5c838d&quot;, element=&quot;f4d505a9-3a00-45f4-9f5a-625837eb5c04&quot;)&gt;]" type="foritem">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Item}</arg>
+</arguments>
+<assign>
+<var>${text}</var>
+</assign>
+<msg timestamp="20210803 14:56:08.172" level="INFO">${text} = Activity Name Commodity Name File Approved on Uploaded by District Version Status</msg>
+<status status="PASS" starttime="20210803 14:56:08.130" endtime="20210803 14:56:08.172"></status>
+</kw>
+<kw name="Split String" library="String">
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<arguments>
+<arg>${text}</arg>
+</arguments>
+<assign>
+<var>@{Actual_value}</var>
+</assign>
+<msg timestamp="20210803 14:56:08.173" level="INFO">@{Actual_value} = [ Activity | Name | Commodity | Name | File | Approved | on | Uploaded | by | District | Version | Status ]</msg>
+<status status="PASS" starttime="20210803 14:56:08.173" endtime="20210803 14:56:08.173"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:08.129" endtime="20210803 14:56:08.173"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:08.128" endtime="20210803 14:56:08.174"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>@{Actual_value}</arg>
+</arguments>
+<assign>
+<var>${Actual}</var>
+</assign>
+<msg timestamp="20210803 14:56:08.175" level="INFO">${Actual} = ['Activity', 'Name', 'Commodity', 'Name', 'File', 'Approved', 'on', 'Uploaded', 'by', 'District', 'Version', 'Status']</msg>
+<status status="PASS" starttime="20210803 14:56:08.175" endtime="20210803 14:56:08.175"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>@{Expected_data}</arg>
+</arguments>
+<assign>
+<var>${Expected}</var>
+</assign>
+<msg timestamp="20210803 14:56:08.175" level="INFO">${Expected} = ['Activity', 'Name', 'Commodity', 'Name', 'File', 'Approved', 'on', 'Uploaded', 'by', 'District', 'Version', 'Status']</msg>
+<status status="PASS" starttime="20210803 14:56:08.175" endtime="20210803 14:56:08.176"></status>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<doc>Fails if given lists are unequal.</doc>
+<arguments>
+<arg>${Actual}</arg>
+<arg>${Expected}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:08.176" endtime="20210803 14:56:08.176"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:08.110" endtime="20210803 14:56:08.176"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210803 14:56:13.190" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210803 14:56:08.177" endtime="20210803 14:56:13.191"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//button[text()='Continue Report'])[2]</arg>
+</arguments>
+<msg timestamp="20210803 14:56:13.192" level="INFO">Clicking element 'xpath:(//button[text()='Continue Report'])[2]'.</msg>
+<status status="PASS" starttime="20210803 14:56:13.191" endtime="20210803 14:56:13.427"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20210803 14:56:28.435" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20210803 14:56:13.427" endtime="20210803 14:56:28.435"></status>
+</kw>
+<kw name="${i} IN RANGE [ 1 | 9 ]" type="for">
+<kw name="${i} = 1" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.436" endtime="20210803 14:56:28.437"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.437" endtime="20210803 14:56:28.437"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.447" level="INFO">${{i}_Header} = 1. Overview</msg>
+<status status="PASS" starttime="20210803 14:56:28.438" endtime="20210803 14:56:28.448"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.448" endtime="20210803 14:56:28.449"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.436" endtime="20210803 14:56:28.449"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.449" endtime="20210803 14:56:28.450"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.450" endtime="20210803 14:56:28.451"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.460" level="INFO">${{i}_Header} = 2. Commodity Geography</msg>
+<status status="PASS" starttime="20210803 14:56:28.451" endtime="20210803 14:56:28.460"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.460" endtime="20210803 14:56:28.461"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.449" endtime="20210803 14:56:28.461"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.462" endtime="20210803 14:56:28.462"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.462" endtime="20210803 14:56:28.463"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.472" level="INFO">${{i}_Header} = 3. Districts Covered</msg>
+<status status="PASS" starttime="20210803 14:56:28.463" endtime="20210803 14:56:28.472"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.472" endtime="20210803 14:56:28.472"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.461" endtime="20210803 14:56:28.472"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.473" endtime="20210803 14:56:28.488"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.489" endtime="20210803 14:56:28.489"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.498" level="INFO">${{i}_Header} = 4. Commodity Details</msg>
+<status status="PASS" starttime="20210803 14:56:28.490" endtime="20210803 14:56:28.499"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.499" endtime="20210803 14:56:28.499"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.473" endtime="20210803 14:56:28.499"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.500" endtime="20210803 14:56:28.500"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.500" endtime="20210803 14:56:28.501"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.510" level="INFO">${{i}_Header} = 5. Group Details</msg>
+<status status="PASS" starttime="20210803 14:56:28.501" endtime="20210803 14:56:28.510"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.510" endtime="20210803 14:56:28.511"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.500" endtime="20210803 14:56:28.511"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.512" endtime="20210803 14:56:28.512"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.513" endtime="20210803 14:56:28.513"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.522" level="INFO">${{i}_Header} = 6. VCA Activities</msg>
+<status status="PASS" starttime="20210803 14:56:28.514" endtime="20210803 14:56:28.522"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.523" endtime="20210803 14:56:28.523"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.511" endtime="20210803 14:56:28.523"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.524" endtime="20210803 14:56:28.524"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.524" endtime="20210803 14:56:28.525"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.533" level="INFO">${{i}_Header} = 7. SWOT Analysis</msg>
+<status status="PASS" starttime="20210803 14:56:28.525" endtime="20210803 14:56:28.533"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.533" endtime="20210803 14:56:28.534"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.524" endtime="20210803 14:56:28.534"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${i}==9</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.534" endtime="20210803 14:56:28.535"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.535" endtime="20210803 14:56:28.535"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:(//p[contains(@class,'d-inline-block')])[${i}]</arg>
+</arguments>
+<assign>
+<var>${{i}_Header}</var>
+</assign>
+<msg timestamp="20210803 14:56:28.546" level="INFO">${{i}_Header} = 8. Upload Documents</msg>
+<status status="PASS" starttime="20210803 14:56:28.536" endtime="20210803 14:56:28.546"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${{i}_Header}</arg>
+</arguments>
+<status status="PASS" starttime="20210803 14:56:28.547" endtime="20210803 14:56:28.547"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.534" endtime="20210803 14:56:28.547"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:56:28.435" endtime="20210803 14:56:28.547"></status>
+</kw>
+<status status="PASS" starttime="20210803 14:55:27.053" endtime="20210803 14:56:28.548" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210803 14:55:26.527" endtime="20210803 14:56:28.549"></status>
+</suite>
+<status status="PASS" starttime="20210803 14:55:26.520" endtime="20210803 14:56:28.553"></status>
+</suite>
+<status status="PASS" starttime="20210803 14:55:26.517" endtime="20210803 14:56:28.555"></status>
+</suite>
+<status status="PASS" starttime="20210803 14:55:26.497" endtime="20210803 14:56:28.557"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Project rbt">Project rbt</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test Suite">Project rbt.Test Suite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="VCA">Project rbt.Test Suite.VCA</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="TC VCA 001">Project rbt.Test Suite.VCA.TC VCA 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
